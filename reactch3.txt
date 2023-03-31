@@ -1,0 +1,21 @@
+//BASIC FOUNDATION OF REACT.
+npm init(initialise npm and it creates package.json)
+package.json contains browserlist ,dependenciesand dev dependencies
+When we write our browser list then thje code is converted in older versions also.
+By initializing git we get git ignore.
+
+USES OF PARCRL(PARCEL IS A BUNDLER)
+HOT MODULE REPLACEMENT
+FILE WATCHER algorithm
+BUNDLING
+MINIFY
+CLEANING OUR codeDEV AND PRODUCTION BUILD
+SUPERFAST BUILD algorithmCACHING WHILE REPLACEMENTCOMPRESSION
+PORT NUMBER
+HTTP ON dev
+TREE SHAKING
+CONSISTENT HASHING algorithmZERO CONFIGURE
+
+
+
+

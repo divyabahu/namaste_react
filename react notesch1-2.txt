@@ -1,0 +1,40 @@
+                    (building our own create react app)
+react is the core package and react dom is the package which is manupulating dom.
+react dom means the web version of the react.
+react is fast due to the virtual dom
+react uses parcel and parcel uses lots of other dependencies
+
+
+=>npm init=>it will provide package.json
+=>npm i -D parcel(-D means dev dependency)=> node modules and package lock are provided
+    parcel uses lot of things to optimise your application
+    it is basically containing all the dependencies
+    package lock is a very imp file it locks the version  so we didnt need to put it in git ignore
+    package lock take care that the version which is running on system is same as the version running on server
+    package lock will help us to generate our node modules on our server
+
+=>npm install(gives us node modules)
+=>npm install react
+=>npm install react-dom
+=>npx parcel index.html(npx means execute using npm) gives us dist folder
+    after installing react and react dom import both of them in app.js file
+    never edit node modules and package lock
+    for resolving the error given by parcel edit script tag in index.html as(<script type="module" src="App.js"></script>)
+    hot module reload will automatically implement the changes when you save your code
+=>npx parcel build index.html(in this index.html is the entry point of our application)
+    remove main:"app.js if it gives error"
+    parcel is a bundler.it does minification.parcel also removes console log and sve the code on dist folder
+    parcel also cleans our code,parcel does image optimization also,parcel also does caching by development.
+    parcel gives us functionality to enable https on our local build
+    parcel manages port nos
+    bebble is a dependency for parcel and parcel is the dependency for react
+    parcel doesnot need any kind of configuration
+    transitive dependencies are responsible to do all the above stuff handeled by parcel
+    parcel use3s consistent hashing algorithm to do all the bundling
+    we should put .parcel-cache in our git ignore
+    any thing which we can generate on server we can put inside gitignore
+
+    INSERT BROWSERS LIST IN PACKAGE.JSON
+    BROWSER LIST MAKE THE application compatible for all the other BROWSERS
+     "last 2 versions" /*the application is compatible with the last 2 versions of all the browsers */
+     "last 2 chrome versions" /*in this the compiler will make sure that the application is working on the last two versions of crome only*/
